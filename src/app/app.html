@@ -1,0 +1,29 @@
+<ion-menu [content]="content" side="right" persistent="true">
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  
+
+  <ion-content>
+
+      <div class="spacer" style="height: 50px;"></div>
+      <ion-avatar item-start class="avator"> 
+          <img src="./assets/imgs/avator.png" />
+        </ion-avatar>
+      <div class="spacer" style="height: 10px;"></div>
+      <h1 class="azkar" text-center >އަޒްކާރު</h1>
+        <div class="spacer" style="height: 20px;"></div>
+    <ion-list class="listfont" details-non dir="rtl">
+      <button  menuClose ion-item *ngFor="let p of pages" [class.activehighlight]="checkactive(p)" (click)="openPage(p)">
+          <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

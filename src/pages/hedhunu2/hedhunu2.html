@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle right>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>ހެދުނުގެ ޒިކްރު</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content (swipe)="swipeEvent($event)" padding>
+  <div class="zikrcounterheader"> 3/13</div>
+  <div margin-horizontal text-centre class="zikrtextarabic">
+      <h2 class="zikrtext">
+        [سْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ * قُلْ أَعُوذُ بِرَ‌بِّ الْفَلَقِ [١] مِن شَرِّ‌ مَا خَلَقَ [٢] وَمِن شَرِّ‌ غَاسِقٍ إِذَا وَقَبَ [٣] وَمِن شَرِّ‌ النَّفَّاثَاتِ فِي الْعُقَدِ [٤] وَمِن شَرِّ‌ حَاسِدٍ إِذَا حَسَدَ [٥
+      </h2>
+    </div>
+    <div class="zikrcounterheader">
+      [سورة البقرة 255] 
+    </div>
+    <br/>
+      <div margin-horizontal text-centre class="zikrtextdhivehi">
+      <h3 class="zikrtext">
+          “ރަޙްމާނުވަންތަ ރަޙީމުވަންތަ ﷲގެ އިސްމުފުޅުން ފަށަަމެވެ. (އޭ މުޙައްމަދުގެފާނެވެ.) ކަލޭގެފާނު ވިދާޅުވާށެވެ. ހެނދުނުގެ ވެރިއިލާހު ޙަޟްރަތުން، އެއިލާހު ހެއްދެވި ހުރިހާ މަޚްލޫޤުންގެ ނުބައިކަމުން ރައްކާތެރިކަމަށް އެދެމެވެ. އަދި ރޭގަނޑުގެ އަނދިރިކަން ވެރިވާ ހިނދު އެރޭގަނޑުގެ އަނދިރިކަމުގެ ނުބައިކަމުން ރައްކާތެރިކަމަށް އެދެމެވެ. އަދި (ގޮށްތައްޖަހާ އެ) ގޮށްތަކަށް ފުމޭ އަންހެނުންގެ (އެބަހީ: ސިހުރުވެރިންގެ) ނުބައިކަމުން ރައްކާތެރިކަމަށް އެދެމެވެ. އަދި ހަސަދަވެރިޔާ ހަސަދަވެރިވާ ހިނދު އޭނާގެ ނުބައިކަމުން ރައްކާތެރިކަމަށް އެދެމެވެ.”
+      </h3>
+    </div>
+    <div text-centre class="zikrcountertext">
+      <h5 class="zikrcountertext" ion-text color="light">
+        ޒިކުރު ގުނުއްވާ
+      </h5>
+    </div>
+
+        <ion-row class="counter">
+              
+            <ion-col padding-vertical>
+                <h1 id="tapCounter" align="center">{{tapCounter}}</h1>
+            </ion-col>
+            <ion-col>
+              <button ion-button block (click)="reset()">
+                  <ion-icon name="refresh"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button block (click)="counterDecrease()">
+                  <ion-icon name="remove"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+                <button ion-button block (click)="counterIncrease()">
+                    <ion-icon name="add-circle"></ion-icon>
+                                       </button>
+            </ion-col>
+          </ion-row>  
+
+</ion-content>

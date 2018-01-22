@@ -1,0 +1,55 @@
+.home {
+ 
+    scroll-content {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    ion-grid {
+        padding: 0;
+        height: 100%;
+    }
+ 
+    ion-row {
+        flex: 1;
+    }
+ 
+}
+.heading {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    font-family: 'Faruma';
+    src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/Faruma.tff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+}
+
+.hedhunu {
+    background-image: url('../assets/imgs/morning.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: floralwhite;
+    width: 100%;
+    font-family: 'Faruma';
+    src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/Faruma.tff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+}
+.haveeru {
+    background-image: url('../assets/imgs/haveeru.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: cornsilk;
+    font-family: 'Faruma';
+    src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/Faruma.tff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+}
+.ionicon {
+    font-size: 160px; 
+    color: rgb(36, 125, 160);
+}

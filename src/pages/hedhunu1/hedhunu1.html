@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle right>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>ހެދުނުގެ ޒިކްރު</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content (swipe)="swipeEvent($event)" padding>
+  <div class="zikrcounterheader"> 2/13</div>
+  <div margin-horizontal text-centre class="zikrtextarabic">
+      <h2 class="zikrtext">
+         [بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ * قُلْ هُوَ اللَّـهُ أَحَدٌ [١] اللَّـهُ الصَّمَدُ [٢] لَمْ يَلِدْ وَلَمْ يُولَدْ [٣] وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ [٤
+      </h2>
+    </div>
+    <div class="zikrcounterheader">
+      [سورة البقرة 255] 
+    </div>
+    <br/>
+      <div margin-horizontal text-centre class="zikrtextdhivehi">
+      <h3 class="zikrtext">
+        “ރަޙްމާނުވަންތަ ރަޙީމުވަންތަ ﷲގެ އިސްމުފުޅުން ފަށަމެވެ. (އޭ މުޙައްމަދުގެފާނެވެ.) ކަލޭގެފާނު ވިދާޅުވާށެވެ. އެއީ ﷲއެވެ. ﷲ އެއްކައުވަންތައެވެ. ﷲއީ ފުދިވޮޑިގެންވާ އިލާހެވެ. އެއިލާހަށް ދަރިކަލަކު ނުވެއެވެ. އަދި ބަފައިކަލަކު ނުމެވޭމެއެވެ. އަދި އެއިލާހާ އެއްފަދަ އެހެން އެއްވެސް ފަރާތެއް ނުވެއެވެ.”
+      </h3>
+    </div>
+    <div text-centre class="zikrcountertext">
+      <h5 class="zikrcountertext" ion-text color="light">
+        ޒިކުރު ގުނުއްވާ
+      </h5>
+    </div>
+
+        <ion-row class="counter">
+              
+            <ion-col padding-vertical>
+                <h1 id="tapCounter" align="center">{{tapCounter}}</h1>
+            </ion-col>
+            <ion-col>
+              <button ion-button block (click)="reset()">
+                  <ion-icon name="refresh"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button block (click)="counterDecrease()">
+                  <ion-icon name="remove"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+                <button ion-button block (click)="counterIncrease()">
+                    <ion-icon name="add-circle"></ion-icon>
+                                       </button>
+            </ion-col>
+          </ion-row>  
+
+</ion-content>

@@ -1,0 +1,58 @@
+
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle right>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>ހެދުނުގެ ޒިކްރު</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content (swipe)="swipeEvent($event)" padding>
+    <div class="zikrcounterheader"> 1/13</div>
+    <div margin-horizontal text-centre class="zikrtextarabic">
+        <h2 class="zikrtext">
+            اللَّـهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْ‌ضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْ‌سِيُّهُ السَّمَاوَاتِ وَالْأَرْ‌ضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ  
+        </h2>
+      </div>
+      <div class="zikrcounterheader">
+        [سورة البقرة 255] 
+      </div>
+      <br/>
+        <div margin-horizontal text-centre class="zikrtextdhivehi">
+        <h3 class="zikrtext">
+            “ﷲ އީ އެއިލާހު ފިޔަވައި އަޅުކަންވެވުން ޙައްޤުވެގެންވާ އެހެން އެއްވެސް އިލާހަކުނުވާ ރަސްކަލާނގެއެވެ. އެއިލާހީ ދިރިދެމިވޮޑިގެންވާ އަބަދަށް ޤާއިމުވެވޮޑިގެންވާ އިލާހެވެ. ތާއްޔާޖެހުމާއި ނިދުން އެކަލާނގެއަށް ނިސްބަތްވެގެންނުވެއެވެ. އުޑުތަކާއި ބިމުގައި ވާހާ އެއްޗެއް ވަނީ އެއިލާހަށެވެ. އެކަލާނގެ ޙަޟްރަތުގައި އެކަލާނގެ އިޒުނަފުޅާނުލައި ޝަފާޢަތްތެރިވެވޭނީ ކާކަށް ހެއްޔެވެ. އެބައިމީހުންގެ ކުރިމަތީގައި ވާހާ ކަމަކާއި އެބައިމީހުންގެ ފަހަތުގައި ވާހާ ކަމެއް (އެބަހީ އިސްވެދިޔަހާ ކަމަކާއި ފަހުން ވާނޭހާ ކަމެއް) އެއިލާހު ދެނެވޮޑިގެންވެއެވެ. އަދި އެއިލާހު ޢިލްމުފުޅުގެ ތެރެއިން އެއިލާހު އިރާދަކުރެއްވި މިންވަރެއް މެނުވީ އެބައިމީހުންނަކަށް ނޭނގޭނެއެވެ. އެއިލާހު ކުރުސިކޮޅު (އެއިލާހު ފައިންޕުޅު އަޅުއްވާ ގޮނޑިކޮޅު) އުޑުތަކާއި ބިމަށްވުރެ ތަނަވަސްވެގެންވެއެވެ. އަދި އުޑުތަކާއި ބިން ރައްކާތެރިކޮށް ބެލެހެއްޓެވުމުގައި އެއިލާހަށް އެއްވެސް ވަރުބަލިކަމެއް ނާދެއެވެ. އަދި އެއިލާހީ މަތިވެރިވެ މާތްވެވޮޑިގެންވާ ރަސްކަލާނގެއެވެ.”
+        </h3>
+      </div>
+      <div text-centre class="zikrcountertext">
+        <h5 class="zikrcountertext" ion-text color="light">
+          ޒިކުރު ގުނުއްވާ
+        </h5>
+      </div>
+
+          <ion-row class="counter">
+                
+              <ion-col padding-vertical>
+                  <h1 id="tapCounter" align="center">{{tapCounter}}</h1>
+              </ion-col>
+              <ion-col>
+                <button ion-button block (click)="reset()">
+                    <ion-icon name="refresh"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col>
+                <button ion-button block (click)="counterDecrease()">
+                    <ion-icon name="remove"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col center text-center>
+                  <button ion-button block (click)="counterIncrease()">
+                      <ion-icon name="add-circle"></ion-icon>
+                                         </button>
+              </ion-col>
+            </ion-row>  
+
+</ion-content>
